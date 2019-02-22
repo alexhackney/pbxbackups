@@ -10,7 +10,7 @@ $localRootDir = getenv('LOCAL_ROOT_DIRECTORY');
 $username = getenv('BACKUP_SERVER_USERNAME');
 $pubkey = getenv('BACKUP_SERVER_PUBKEY');
 $privkey = getenv('BACKUP_SERVER_PRIVKEY');
-$remoteRootDirectory = getenv('REMOTE_ROOT_DIRECTORY') . '/' . $clientName;
+$remoteRootDirectory = getenv('REMOTE_ROOT_DIRECTORY') . '/' . $clientName . '/';
 $flush = getenv('FLUSH');
 
 $session = ssh2_connect($backupServer, 22);
