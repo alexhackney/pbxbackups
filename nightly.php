@@ -3,7 +3,7 @@ require __DIR__ . '/vendor/autoload.php';
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
-$localFolders = explode(',', getenv('LOCAL_FOLDERS'));
+$localDirectories = explode(',', getenv('LOCAL_FOLDERS'));
 $clientName = getenv('CLIENT_NAME');
 $backupServer = getenv('BACKUP_SERVER');
 $localRootDir = getenv('LOCAL_ROOT_DIRECTORY');
