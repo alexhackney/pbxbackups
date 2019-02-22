@@ -11,7 +11,7 @@ $username = getenv('REMOTE_SERVER_USERNAME');
 $pubkey = getenv('BACKUP_SERVER_PUBKEY');
 $privkey = getenv('BACKUP_SERVER_PRIVKEY');
 $remoteRootDirectory = getenv('REMOTE_ROOT_DIRECTORY') . '/' . $clientName;
-$flush = true;
+$flush = getenv('FLUSH');
 
 $session = ssh2_connect($backupServer, 22);
 if (!authenticate($session, $username, $pubkey, $privkey)) {
