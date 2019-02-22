@@ -1,0 +1,13 @@
+{
+    "name": "alexhackney/pbxbackups",
+    "description": "Simple app for managing pbx backups for our clients",
+    "require": {
+        "vlucas/phpdotenv": "v2.0.1"
+    },
+    "authors": [
+        {
+            "name": "Alex Hackney",
+            "email": "me@alexhackney.com"
+        }
+    ]
+}
